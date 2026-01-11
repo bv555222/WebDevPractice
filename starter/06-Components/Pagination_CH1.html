@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .pagination{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            gap:10px;
+            margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0);
+            
+        }
+        .pagination > button{
+            width:25px;
+            height: 25px;
+            border-radius: 50%;
+            border: none;
+            gap: 10px;
+        }
+
+        .pagination  button:hover{
+            background-color:#087f5b;
+            color: white;
+            cursor: pointer;
+        }
+        
+        
+        .pagination .left,
+        .pagination .right{
+            width:30px;
+            height: 30px;
+            border: 1px solid #087f5b;
+            
+        }
+        svg{
+            padding: 6px;
+            stroke: #087f5b;
+        }
+
+        svg:hover{
+            stroke:white;
+        }
+        .pagination .pg4{
+            background-color: #087f5b;
+            color: whitesmoke;
+        }
+    </style>
+    <title>Document</title>
+ </head>
+ <body>
+    <div class="pagination">
+        <button class="btn left"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+</svg>
+</button>
+        <button href="#" class="btn pg1">1</button>
+        <button href="#"  class="btn pg2">2</button>
+        <button href="#" class="btn pg3">3</button>
+        <button href="#" class="btn pg4">4</button>
+        <button href="#" class="btn pg5">...</button>
+        <button href="#" class="btn pg6">20</button>
+        <button href="#" class="btn right"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+</button>
+    </div>
+ </body>
+ </html>

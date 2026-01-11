@@ -24,6 +24,7 @@
             gap:60px;
             align-items: center;
             padding: 40px;
+            padding-right: 50px;
             margin-bottom: 30px;
             
         }
@@ -99,27 +100,23 @@
         }
 
         .carousel_dots{
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            gap:10px;
-            justify-content: center;
-            align-items: center;
-            margin-top: 0%;
-
-           
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%,32px);
+            
         } 
 
-        .dot1,.dot2, .dot3, .dot4 {
+        .carousel_dot {
             cursor: pointer;
             width: 5px;
             height: 5px;
-            border: 2px solid #087f5b;
+            border: 1.5px solid #087f5b;
             border-radius: 50%;
             padding: 3px;
-        } 
+        }  
 
-         .dot1{
+         .dot_fill{
             background-color: #087f5b;
          }
         
@@ -156,14 +153,13 @@
 
 
         </div>
-       
-    </div>
-     <div class="carousel_dots">
-<button class="carousel_dots dot1"></button>
-<button class="carousel_dots dot2"></button>
-<button class="carousel_dots dot3"></button>
-<button class="carousel_dots dot4"></button>
-
+       <div class="carousel_dots">
+<button class="carousel_dot dot_fill">&nbsp;</button>
+<button class="carousel_dot">&nbsp;</button>
+<button class="carousel_dot">&nbsp;</button>
+<button class="carousel_dot">&nbsp;</button>
 </div>
+    </div>
+
 </body>
 </html>
