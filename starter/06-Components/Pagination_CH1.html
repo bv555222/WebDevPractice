@@ -19,15 +19,31 @@
             background-color: rgba(255, 255, 255, 0);
             
         }
-        .pagination > button{
+        
+        .pagination > a{
             width:25px;
             height: 25px;
             border-radius: 50%;
             border: none;
             gap: 10px;
+            font-size: 13px;
         }
 
-        .pagination  button:hover{
+        
+
+        .pagination >a:link,
+        .pagination >a:visited{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+
+        
+
+        .pagination  button:hover,
+        .pagination a:hover{
             background-color:#087f5b;
             color: white;
             cursor: pointer;
@@ -39,6 +55,7 @@
             width:30px;
             height: 30px;
             border: 1px solid #087f5b;
+            border-radius: 50%;
             
         }
         svg{
@@ -51,7 +68,7 @@
         }
         .pagination .pg4{
             background-color: #087f5b;
-            color: whitesmoke;
+            color:white;
         }
     </style>
     <title>Document</title>
@@ -62,12 +79,12 @@
   <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
 </svg>
 </button>
-        <button href="#" class="btn pg1">1</button>
-        <button href="#"  class="btn pg2">2</button>
-        <button href="#" class="btn pg3">3</button>
-        <button href="#" class="btn pg4">4</button>
-        <button href="#" class="btn pg5">...</button>
-        <button href="#" class="btn pg6">20</button>
+        <a href="#" class="btn pg1">1</a>
+        <a href="#"  class="btn pg2">2</a>
+        <a href="#" class="btn pg3">3</a>
+        <a href="#" class="btn pg4">4</a>
+        <a href="#" class="btn pg5">...</a>
+        <a href="#" class="btn pg6">20</a>
         <button href="#" class="btn right"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
 </svg>
